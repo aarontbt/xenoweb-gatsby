@@ -41,5 +41,11 @@ module.exports = {
         }
       },
     },
+    {
+      resolve: 'gatsby-plugin-zopfli',
+      options: {
+        extensions: ['css', 'js', 'svg']
+      }
+    },
   ],
 }
