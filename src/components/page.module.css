@@ -1,0 +1,38 @@
+@value primary-color: #eb5757;
+@value bg-color: white;
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  background: primary-color;
+}
+
+.header .title {
+  margin: 0;
+  color: bg-color;
+}
+
+.content {
+  background: bg-color;
+  padding: 50px;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  background: bg-color;
+}
+
+@media only screen and (max-width: 567px) {
+  .header,
+  .content,
+  .footer {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
