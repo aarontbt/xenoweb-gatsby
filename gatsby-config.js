@@ -30,5 +30,16 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
+    {
+      resolve: `gatsby-plugin-less`,
+      options: {
+        javascriptEnabled: true,
+        modifyVars: {
+          'primary-color': '#663399',
+          'font-family': 'Arial',
+          'layout-body-background': '#66ff79'
+        }
+      },
+    },
   ],
 }

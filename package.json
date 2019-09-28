@@ -5,20 +5,31 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "antd": "^3.23.4",
+    "babel-plugin-import": "^1.12.2",
     "gatsby": "^2.15.28",
     "gatsby-image": "^2.2.23",
+    "gatsby-plugin-less": "^3.0.9",
     "gatsby-plugin-manifest": "^2.2.20",
     "gatsby-plugin-offline": "^3.0.11",
     "gatsby-plugin-react-helmet": "^3.1.10",
     "gatsby-plugin-sharp": "^2.2.27",
     "gatsby-source-filesystem": "^2.1.28",
     "gatsby-transformer-sharp": "^2.2.19",
+    "less": "^3.10.3",
+    "less-loader": "^5.0.0",
     "prop-types": "^15.7.2",
     "react": "^16.10.0",
     "react-dom": "^16.10.0",
     "react-helmet": "^5.2.1"
   },
   "devDependencies": {
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.4.0",
+    "eslint-config-prettier": "^6.3.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-react-hooks": "^2.1.0",
     "prettier": "^1.18.2"
   },
   "keywords": [
