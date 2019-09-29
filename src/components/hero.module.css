@@ -1,0 +1,94 @@
+@value primary-color: #eb5757;
+@value bg-color: white;
+
+.hero {
+  position: relative;
+}
+
+.hero p {
+  color: bg-color;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  flex: 0 1 auto;
+  text-align: justify;
+  align-self: flex-start;
+  margin-bottom: 0;
+}
+
+.hero p:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 60px;
+  background: url("/header-pattern.png") repeat-x;
+  background-size: 60px auto;
+  margin-bottom: 16px;
+}
+
+.hero p:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -100px;
+  right: 0;
+  width: 120px;
+  height: 120px;
+  background: url("/me.png") no-repeat;
+  background-size: 120px auto;
+}
+
+.hero .hi {
+  display: block;
+  width: 300px;
+  margin-right: 48px;
+  animation: bounce 2s infinite;
+}
+
+@media only screen and (max-width: 797px) {
+  .hero {
+    flex-wrap: wrap;
+  }
+
+  .hero a,
+  .hero p {
+    flex: 1 0 100% !important;
+  }
+
+  .hero p:before {
+    margin-top: 24px;
+  }
+  .hero p:after {
+    background-size: 80px auto;
+    bottom: -70px;
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.bounce {
+  animation-name: bounce;
+  animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
+}
+@keyframes bounce {
+  0% {
+    transform: scale(1, 1) translateY(0);
+  }
+  10% {
+    transform: scale(1.05, 0.9) translateY(0);
+  }
+  30% {
+    transform: scale(0.9, 1.05) translateY(-10px);
+  }
+  50% {
+    transform: scale(1.02, 0.95) translateY(0);
+  }
+  57% {
+    transform: scale(1, 1) translateY(-10px);
+  }
+  64% {
+    transform: scale(1, 1) translateY(0);
+  }
+  100% {
+    transform: scale(1, 1) translateY(0);
+  }
+}

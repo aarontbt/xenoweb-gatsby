@@ -1,10 +1,11 @@
 import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql, Link } from "gatsby"
-import { Layout, Typography } from "antd"
+import { useStaticQuery, graphql } from "gatsby"
+import { Layout } from "antd"
 
 import Pane from "./pane"
 import style from "./page.module.css"
+import Hero from "./hero"
 
 const Page = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -18,17 +19,12 @@ const Page = ({ children }) => {
   `)
 
   const { Header, Footer, Content } = Layout
-  const { Title } = Typography
 
   return (
     <>
       <Layout className={style.layout}>
-        <Header className={style.header}>
-          <Pane flex={true}>
-            <Title level={2} className={style.title}>
-              <Link to="/">{data.site.siteMetadata.title}</Link>
-            </Title>
-          </Pane>
+        <Header className={style.header} title={data.site.siteMetadata.title}>
+          <Hero />
         </Header>
         <Content className={style.content}>
           <Pane>{children}</Pane>
