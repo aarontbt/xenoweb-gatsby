@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import { Button, Row, Col, Modal } from "antd"
+import { Button, Row, Col, Modal, Typography } from "antd"
 
 import Page from "../components/page"
 import Image from "../components/image"
@@ -21,10 +21,11 @@ const IndexPage = () => {
       onOk() {},
     })
   }
+  const { Title } = Typography
   return (
     <Page>
       <SEO title="Home" />
-      <h1>Hi there!</h1>
+      <Title>Hi there!</Title>
       <p>Welcome to your new Gatsby site.</p>
       <p>Now go build something great.</p>
       <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>

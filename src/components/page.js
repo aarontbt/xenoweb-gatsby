@@ -1,8 +1,9 @@
 import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 import { Layout, Typography } from "antd"
 
+import Pane from "./pane"
 import style from "./page.module.css"
 
 const Page = ({ children }) => {
@@ -21,17 +22,23 @@ const Page = ({ children }) => {
 
   return (
     <>
-      <Layout>
+      <Layout className={style.layout}>
         <Header className={style.header}>
-          <Title level={2} className={style.title}>
-            {data.site.siteMetadata.title}
-          </Title>
+          <Pane flex={true}>
+            <Title level={2} className={style.title}>
+              <Link to="/">{data.site.siteMetadata.title}</Link>
+            </Title>
+          </Pane>
         </Header>
-        <Content className={style.content}>{children}</Content>
+        <Content className={style.content}>
+          <Pane>{children}</Pane>
+        </Content>
         <Footer className={style.footer}>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+          <Pane>
+            © {new Date().getFullYear()}, Built with
+            {` `}
+            <a href="https://www.gatsbyjs.org">Gatsby</a>
+          </Pane>
         </Footer>
       </Layout>
     </>

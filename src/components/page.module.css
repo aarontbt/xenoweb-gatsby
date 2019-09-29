@@ -6,6 +6,10 @@
   align-items: center;
 }
 
+.layout {
+  min-height: 100vh;
+}
+
 .header {
   display: flex;
   align-items: center;
@@ -15,6 +19,14 @@
 .header .title {
   margin: 0;
   color: bg-color;
+}
+
+.header .title a {
+  color: bg-color;
+  transition: opacity 300ms ease-out;
+}
+.header .title a:hover {
+  opacity: 0.6;
 }
 
 .content {
