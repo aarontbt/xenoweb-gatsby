@@ -21,7 +21,7 @@
   width: 100%;
   height: 60px;
   background: url("/header-pattern.png") repeat-x;
-  background-size: 60px auto;
+  background-size: auto 60px;
   margin-bottom: 16px;
 }
 

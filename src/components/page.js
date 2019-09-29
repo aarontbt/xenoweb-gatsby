@@ -3,9 +3,11 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import { Layout } from "antd"
 
-import Pane from "./pane"
 import style from "./page.module.css"
+
+import Pane from "./pane"
 import Hero from "./hero"
+import Ender from "./ender"
 
 const Page = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -30,11 +32,7 @@ const Page = ({ children }) => {
           <Pane>{children}</Pane>
         </Content>
         <Footer className={style.footer}>
-          <Pane>
-            © {new Date().getFullYear()}, Built with
-            {` `}
-            <a href="https://www.gatsbyjs.org">Gatsby</a>
-          </Pane>
+          <Ender />
         </Footer>
       </Layout>
     </>
