@@ -38,6 +38,7 @@ module.exports = {
           "primary-color": "#EB5757",
           "link-color": "#EB5757",
           "font-family": "Arial",
+          "heading-color": "#F2C94C",
           "layout-body-background": "#66ff79",
         },
       },

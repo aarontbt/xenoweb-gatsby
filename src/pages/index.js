@@ -3,21 +3,16 @@ import { PageHeader, Empty } from "antd"
 
 import Page from "../components/page"
 import SEO from "../components/seo"
+import { SvgRedline } from "../components/svg"
 
 const IndexPage = () => {
-  const routes = [
-    {
-      path: "/",
-      breadcrumbName: "Home",
-    },
-  ]
   return (
     <Page>
       <SEO title="Home" />
+      <SvgRedline animate={true} />
       <PageHeader
         title="Under Construction"
-        breadcrumb={{ routes }}
-        style={{ paddingLeft: "0", paddingRight: "0" }}
+        style={{ paddingTop: "46px", paddingLeft: "0", paddingRight: "0" }}
       />
       <Empty style={{ margin: "5rem auto" }} />
     </Page>

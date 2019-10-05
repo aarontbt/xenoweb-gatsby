@@ -1,0 +1,37 @@
+@value primary-color: #eb5757;
+@value bg-color: white;
+
+.redline {
+  max-width: 200px;
+  position: absolute;
+  margin-left: -60px;
+}
+
+.redline .frame_inner {
+  stroke-dasharray: 260;
+  stroke-dashoffset: 260;
+  animation: dash 1s ease forwards;
+}
+
+.redline .frame_outer {
+  stroke-dasharray: 56;
+  stroke-dashoffset: 56;
+  animation: dash 1s ease 0.5s forwards;
+}
+
+.redline .frame_text {
+  opacity: 0;
+  animation: fade 0.5s ease 0.8s forwards;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fade {
+  to {
+    opacity: 1;
+  }
+}
