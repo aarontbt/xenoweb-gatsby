@@ -11040,6 +11040,18 @@ scroll-behavior@^0.9.10:
     dom-helpers "^3.2.1"
     invariant "^2.2.2"
 
+scrollmonitor-hooks@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/scrollmonitor-hooks/-/scrollmonitor-hooks-1.0.2.tgz#67ed6df424cef0431fe1cafc6574400435d75d66"
+  integrity sha512-80IrFiFlZKwQwDCwf34cz3RbLJm9IDGpPFDZlFrdQ55nAKUWLAnYqAg8Nl1L7nDpRSj+OswZQ24NIEeN0E18Zg==
+  dependencies:
+    scrollmonitor "^1.2.4"
+
+scrollmonitor@^1.2.4:
+  version "1.2.4"
+  resolved "https://registry.yarnpkg.com/scrollmonitor/-/scrollmonitor-1.2.4.tgz#823d04cc1574aa3b71de7cc70ef91ebe633344a0"
+  integrity sha512-HBQpeZVAYETbNk0DAmi+X4hdTQMk5WRa/Udez9o8yC8GcRiPDgBxyEdV9g9Su/TWOuUeVfVGfNcyboEyzkte4Q==
+
 seek-bzip@^1.0.5:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/seek-bzip/-/seek-bzip-1.0.5.tgz#cfe917cb3d274bcffac792758af53173eb1fabdc"
