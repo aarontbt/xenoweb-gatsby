@@ -5,6 +5,11 @@
   max-width: 200px;
   position: absolute;
   margin-left: -60px;
+  opacity: 0;
+}
+
+.redline_animate {
+  opacity: 1;
 }
 
 .redline_animate :global(.frame_inner) {
