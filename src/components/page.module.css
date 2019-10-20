@@ -8,6 +8,7 @@
 
 .layout {
   min-height: 100vh;
+  background: transparent;
 }
 
 .header {
@@ -34,8 +35,9 @@
 }
 
 .content {
-  background: bg-color;
+  background: transparent;
   padding: 0 50px;
+  z-index: 10;
 }
 
 .footer {
@@ -43,6 +45,26 @@
   align-items: center;
   background: bg-color;
   position: relative;
+}
+
+.footer > * {
+  z-index: 10;
+}
+
+.footer:before {
+  content: "";
+  position: absolute;
+  width: 480px;
+  height: 240px;
+  bottom: 16px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 0;
+
+  background: url("/bench.png") no-repeat bottom center;
+  background-size: 100%;
+  object-fit: fill;
 }
 
 .footer:after {
