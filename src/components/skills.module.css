@@ -1,0 +1,65 @@
+@value primary-color: #eb5757;
+@value bg-color: white;
+
+.header {
+  padding-top: 46px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.header :global(.ant-page-header-heading-title) {
+  font-size: 36px;
+  letter-spacing: -0.02em;
+}
+
+.row {
+  margin-bottom: 0;
+}
+
+.text {
+  color: primary-color;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0.02em;
+}
+
+.rate {
+  font-size: 36px;
+  color: primary-color;
+}
+
+.tag {
+  margin-top: 24px;
+}
+
+.tag :global(.ant-tag) {
+  color: #fff;
+  background: primary-color;
+  border: 0;
+  border-radius: 5px 0 0 5px;
+  padding: 4px 4px 4px 12px;
+  position: relative;
+  margin: 0 32px 16px 0;
+}
+
+.tag :global(.ant-tag):after {
+  content: "";
+  width: 18px;
+  height: 28px;
+  background: url("/tag-right.svg") no-repeat top left;
+  object-fit: fill;
+
+  position: absolute;
+  top: 0;
+  right: -16px;
+}
+
+@media only screen and (max-width: 576px) {
+  .text {
+    font-size: 14px;
+  }
+
+  .rate {
+    font-size: 24px;
+  }
+}

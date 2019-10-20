@@ -85,4 +85,7 @@
     padding-left: 24px;
     padding-right: 24px;
   }
+  .footer:before {
+    display: none;
+  }
 }
