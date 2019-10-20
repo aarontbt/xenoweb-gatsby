@@ -1,0 +1,32 @@
+@value primary-color: #eb5757;
+@value bg-color: white;
+
+.header {
+  padding-top: 46px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.header :global(.ant-page-header-heading-title) {
+  font-size: 36px;
+  letter-spacing: -0.02em;
+}
+
+.experience {
+  margin-bottom: 24px;
+}
+
+.period,
+h2.company {
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: primary-color;
+}
+
+.content {
+  font-size: 1.2rem;
+  line-height: 2rem;
+  color: #999;
+  text-align: justify;
+}

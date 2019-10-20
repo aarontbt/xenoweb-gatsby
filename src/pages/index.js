@@ -5,6 +5,7 @@ import Page from "../components/page"
 import SEO from "../components/seo"
 import Contacts from "../components/contacts"
 import Skills from "../components/skills"
+import Experiences from "../components/experiences"
 import { SvgRedline } from "../components/svg"
 
 const IndexPage = () => {
@@ -18,6 +19,12 @@ const IndexPage = () => {
         </Col>
         <Col lg={12}>
           <Skills />
+        </Col>
+      </Row>
+      <Row>
+        <Col>
+          <SvgRedline animate={true} />
+          <Experiences />
         </Col>
       </Row>
     </Page>

@@ -45,6 +45,7 @@
   align-items: center;
   background: bg-color;
   position: relative;
+  margin-top: 100px;
 }
 
 .footer > * {
@@ -84,6 +85,9 @@
   .footer {
     padding-left: 24px;
     padding-right: 24px;
+  }
+  .footer {
+    margin-top: 0;
   }
   .footer:before {
     display: none;
