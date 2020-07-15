@@ -24,6 +24,16 @@ const Contacts = () => {
     <>
       <PageHeader title="work experiences" className={style.header} />
       <Experience
+        period="2019  MAR - CURRENT"
+        company="UI/UX DESIGNER & FRONTEND DEVELOPER"
+      >
+        Founded in Tokyo, Grooves is a HR technology company that enhances the
+        recruitment process for candidates, companies and recruiting agencies. I
+        have taken the challenge to work with a fresh startup (5-man) company in
+        bringing local talents to Japan. This is something I'm passionate about
+        and I want to share working in Japan with others.
+      </Experience>
+      <Experience
         period="2015 SEP - 2019 JAN"
         company="SEEK ASIA (JOBSTREET) — PRODUCT DESIGN LEAD"
       >
