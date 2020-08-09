@@ -41,9 +41,9 @@ const Contacts = () => {
   return (
     <>
       <PageHeader title="skills" className={style.header} />
-      <Rating skill="FRONTEND DEVELOPMENT" value={5} />
       <Rating skill="USER EXPERIENCE (UX)" value={4} />
       <Rating skill="UI DESIGN &amp; WIREFRAME" value={4} />
+      <Rating skill="FRONTEND DEVELOPMENT" value={4} />
       <Rating skill="USER RESEARCH" value={3} />
       <Row type="flex" className={style.tag}>
         <Col>
