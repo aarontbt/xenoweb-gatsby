@@ -43,7 +43,7 @@
   "scripts": {
     "clean": "gatsby clean",
     "build": "gatsby build",
-    "deploy": "gatsby clean && gatsby build && cp -a ../public/. public/",
+    "deploy": "gatsby clean && gatsby build && cp -a public/. ../public/",
     "dev": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",

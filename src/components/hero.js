@@ -14,8 +14,7 @@ const Hero = ({ props }) => {
       <p>
         I&apos;m Aaron Tan, a confident, articulate and determined Product
         Designer who has experience of being involved in a wide range of UX
-        activities across both design and frontend development. I&apos;m
-        currently looking for an exciting place to work and showcase my skills.
+        activities across both design and frontend development.
       </p>
     </Pane>
   )

@@ -24,7 +24,17 @@ const Contacts = () => {
     <>
       <PageHeader title="work experiences" className={style.header} />
       <Experience
-        period="2019  MAR - CURRENT"
+        period="2020 SEP - CURRENT"
+        company="THE MAKEOVER GUYS - DIGITAL EXPERIENCE ENGINEER"
+      >
+        Part of one of the new digital teams at The Makeover Guys,
+        I'm responsible to bring a bright & mature retail (renovation)
+        startup with great digital customer & crew experience.
+        Previously the company is limited by the manual operation of
+        handling multiple excel that has caused them a lot of miscommunication and time.
+      </Experience>
+      <Experience
+        period="2019  MAR - 2020  AUG"
         company="GROOVES — UI/UX DESIGNER & FRONTEND DEVELOPER"
       >
         Founded in Tokyo, Grooves is a HR technology company that enhances the
