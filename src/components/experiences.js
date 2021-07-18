@@ -25,7 +25,7 @@ const Contacts = () => {
       <PageHeader title="work experiences" className={style.header} />
       <Experience
         period="2020 SEP - CURRENT"
-        company="THE MAKEOVER GUYS - DIGITAL EXPERIENCE ENGINEER"
+        company="THE MAKEOVER GUYS — DIGITAL EXPERIENCE ENGINEER"
       >
         Part of one of the new digital teams at The Makeover Guys,
         I'm responsible to bring a bright & mature retail (renovation)
